@@ -21,16 +21,16 @@ export default function Header (props) {
                         <div className='hover:rotate-45 hover:scale-125 transform duration-200 cursor-pointer justify-center items-center flex'>
                             <LazyImage priority={true} src={siteInfo?.icon} className='rounded-full' width={100} height={100} alt={siteConfig('AUTHOR')} />
                         </div>
-
                         <div className='flex-col flex justify-center'>
-                            <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>{siteConfig('AUTHOR')}<DarkModeButton className='text-center pt-4'/></div>
+                            <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>{siteConfig('AUTHOR')}</div>
                             <div className='font-light dark:text-white py-2 hover:scale-105 transform duration-200 text-center' dangerouslySetInnerHTML={{ __html: siteConfig('SIMPLE_LOGO_DESCRIPTION', null, CONFIG) }} />
                         </div>
                     </div>
                 </Link>
 
+
                 <div className='flex justify-center'>
-                <SocialButton />
+                <SocialButton /><DarkModeButton className='text-center pt-4'/>
                 </div>
                 <div className='text-xs mt-4 text-gray-500 dark:text-gray-300'>{siteConfig('DESCRIPTION')}</div>
             </div>
