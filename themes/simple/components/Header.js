@@ -30,7 +30,7 @@ export default function Header (props) {
 
 
                 <div className='flex justify-center'>
-                <SocialButton /><DarkModeButton className='text-center pt-4'/>
+                <SocialButton />
                 </div>
                 <div className='text-xs mt-4 text-gray-500 dark:text-gray-300'>{siteConfig('DESCRIPTION')}</div>
             </div>
