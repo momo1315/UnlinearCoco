@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { useSimpleGlobal } from '..'
 import { MenuList } from './MenuList'
-
+import DarkModeButton from '@/components/DarkModeButton'
 /**
  * 菜单导航
  * @param {*} props
@@ -67,6 +67,7 @@ export default function NavBar(props) {
             onClick={toggleShowSearchInput}
           ></i>
         </div>
+        <DarkModeButton className='text-center pt-4'/>
       </div>
     </nav>
   )
