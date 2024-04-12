@@ -1,4 +1,5 @@
 import LazyImage from '@/components/LazyImage'
+import DarkModeButton from '@/components/DarkModeButton'
 import Link from 'next/link'
 import CONFIG from '../config'
 import SocialButton from './SocialButton'
@@ -19,6 +20,7 @@ export default function Header (props) {
                     <div className='flex space-x-6'>
                         <div className='hover:rotate-45 hover:scale-125 transform duration-200 cursor-pointer justify-center items-center flex'>
                             <LazyImage priority={true} src={siteInfo?.icon} className='rounded-full' width={100} height={100} alt={siteConfig('AUTHOR')} />
+                            <DarkModeButton className='text-center pt-4'/>
                         </div>
 
                         <div className='flex-col flex justify-center'>
