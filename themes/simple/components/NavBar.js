@@ -54,7 +54,7 @@ export default function NavBar(props) {
             />
           )}
           {!showSearchInput && <MenuList {...props} />}
-          <DarkModeButton className='text-center pt-4'/>
+          <DarkModeButton className='text-center pt-3'/>
         </div>
 
         <div className="absolute right-12 h-full text-center px-2 flex items-center text-blue-400  cursor-pointer">
